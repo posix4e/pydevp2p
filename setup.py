@@ -8,9 +8,6 @@ except ImportError:
     from distutils.core import setup
 
 
-readme = open('README.rst').read()
-history = open('HISTORY.rst').read().replace('.. :changelog:', '')
-
 install_requires = set(x.strip() for x in open('requirements.txt'))
 install_requires_replacements = {
 }
@@ -30,7 +27,7 @@ setup(
     name='devp2p',
     version=version,
     description='Python implementation of the Ethereum P2P stack',
-    long_description=readme + '\n\n' + history,
+    long_description="No description for you",
     author='HeikoHeiko',
     author_email='heiko@ethdev.com',
     url='https://github.com/ethereum/pydevp2p',
